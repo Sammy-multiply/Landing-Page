@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    width: 80%;
+    z-index: 1000;
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+    float: left;
+
+}
+
+.image {
+    z-index: 1000;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navBar li {
+    margin-left: 4rem;
+}
+
+.navBar li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #444;
+}
+
+.content {
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text {
+    position: absolute;
+    width: 600px;
+    top: 150%;
+    left: 10%;
+}
+
+.text h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.text p {
+    line-height: 1.5em;
+
+}
+
+.text span {
+    color: #ee9b00;
+    font-weight: 900;
+}
+
+.sneakers {
+    position: absolute;
+    left: 55%;
+    top: -10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+
+button {
+    width: 160px;
+    padding: .8rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #ee9b00;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.sneakers .foot {
+    width: 400px;
+    height: 500px;
+    transform: rotate(-0.12turn);
+    filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, .8));
+}
+
+.thumb {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 35%;
+    top: 75%;
+}
+
+.thumb img {
+    width: 100px;
+    height: 200px;
+    margin-left: 20px;
+    filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, .8));
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb img:hover {
+    transform: translateY(-17px);
+}
+
+.media {
+    margin-top: 150px;
+    margin-left: 120px;
+
+}
+
+.media img {
+    width: 30px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #b7e4c7;
+    clip-path: circle(600px at right 800px);
+}
